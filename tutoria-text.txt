@@ -1,0 +1,25 @@
+MVC 
+
+MODEL VIEW CONTROLLER
+
+[ MODEL ] - < CONTROLLER > - [ VIEW ]
+
+JS (Controllers, Modulos, Directivas) <- $scope -> HTML (dataBiding: {{NombreVariable}}, Directivas)
+
+---
+
+MVVM -> Model view view Model
+
+
+Gestor de paquetes: 
+	- Webpack
+	- Bower
+	- npm -> Instalación de modulos
+
+
+
+CONTROLLER OBTENER PERSONA
+ 	- Obtener la informacion del formulario en un controlador √
+ 	- Donde defino un controlador (HTML) √
+ 	- como defino el evento click del boton √
+ 	- desplegar la informacion √

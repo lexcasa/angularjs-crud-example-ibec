@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- APP PRINCIPAL -->
+<html ng-app="app">
+<head>
+	<title>APP ANGULAR</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+	<!-- JS/ ERROR -->
+</head>
+<body ng-controller="BuscarPersonaCtrl">
+	<!-- HTML -->
+
+	<!-- AJAJ -->
+	<script type="text/javascript" src="app.js"></script>
+
+	<!-- VIEW -->
+	<div ng-include="'components/clientes/views/indexView.html'" ng-controller="ClienteCtrl"></div>
+
+	<!-- CONTROLLERS -->
+	<script type="text/javascript" src="components/clientes/controllers/clientes.controller.js"></script>
+</body>
+</html>
+<!-- / APP PRINCIPAL -->

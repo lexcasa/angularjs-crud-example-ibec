@@ -1,0 +1,39 @@
+<h2>{{title}}</h2>
+<button ng-click="setIsNew(true);">Crear</button>
+<button ng-click="setIsNew(false); obtenerClientes()">Listar</button>
+
+<form ng-if="isNew">
+	<input type="text" name="" placeholder="Nombre" ng-model="item.name">
+	<br>
+	<input type="email" name="" placeholder="Email" ng-model="item.email">
+	<br>
+	<button ng-click="save()">Enviar</button>
+</form>
+<table ng-if="!isNew">
+	<head>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Email</th>
+			<th></th>
+		</tr>
+	</head>
+	<tbody>
+		<tr ng-repeat="cliente in clientes">
+			<td>
+				{{cliente._id}}
+			</td>
+			<td>
+				{{cliente.name}}
+			</td>
+			<td>
+				{{cliente.email}}
+			</td>
+			<td>
+				<button ng-click="obtenerCliente(cliente._id); setIsNew(true)">
+					Obtener cliente
+				</button>
+			</td>
+		</tr>
+	</tbody>
+</table>
